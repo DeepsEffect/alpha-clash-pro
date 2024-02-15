@@ -14,13 +14,13 @@
     <main
         class="bg-[url('./images/background.png')] min-h-screen bg-no-repeat bg-center items-center bg-no-repea bg-[#010313] ">
         <!--* homepage section  -->
-        <section class="text-white min-h-screen flex flex-col items-center justify-center gap-y-10 hidden">
+        <section id="play-now" class="text-white min-h-screen flex flex-col items-center justify-center gap-y-10 ">
             <h1 class="text-[170px] font-anton text-2xl p-14 ">ALPHABET CLASH</h1>
             <p class="font-medium">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-            <button class="btn font-semibold">Play Now</button>
+            <button onclick="playNow()" class="btn font-semibold">Play Now</button>
         </section>
         <!--* play game section -->
-        <section class="pt-24 flex flex-col items-center space-y-24 hidden">
+        <section id="play-game" class="pt-24 flex flex-col items-center space-y-24 hidden">
             <!-- display -->
             <div
                 class="artboard artboard-horizontal phone-6 border-[20px] border-[#010313CC] rounded-lg bg-[#FFFFFFB3] flex flex-col items-center justify-center">
@@ -88,10 +88,10 @@
             </div>
         </section>
         <!--* score section -->
-        <section>
+        <section class="hidden">
             <div class=" text-white min-h-screen flex flex-col justify-center items-center gap-14">
                 <h2 class="text-4xl font-bold">Score : <span>0</span></h2>
-                <button class="btn font-semibold">Play Again</button>
+                <button class="btn text-lg font-bold">Play Again</button>
                 <p class="text-xl">Practice will make you better :)</p>
             </div>
         </section>
