@@ -5,7 +5,10 @@ function playNow () {
 }
 
 function continueGame() {
-    getId('alpha-screen').innerText = randomAlphabet();
+    const randomAlpha = randomAlphabet();
+    getId('alpha-screen').innerText = randomAlpha;
+    keyboardHighlighter(randomAlpha);
+
 }
 
 
