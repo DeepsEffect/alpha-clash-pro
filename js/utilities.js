@@ -12,3 +12,6 @@ function randomAlphabet () {
 function keyboardHighlighter (elementId){
     getId(elementId).classList.add('bg-orange-400');
 }
+function keyboardNonHighlighter (elementId){
+    getId(elementId).classList.remove('bg-orange-400');
+}

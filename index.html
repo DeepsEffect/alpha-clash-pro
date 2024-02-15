@@ -16,7 +16,7 @@
         <!--* homepage section  -->
         <section id="play-now" class="text-white min-h-screen flex flex-col items-center justify-center gap-y-10 ">
             <h1 class="text-[170px] font-anton text-2xl p-14 ">ALPHABET CLASH</h1>
-            <p class="font-medium">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+            <p class="font-medium">Unleash Your Keyboard Kung Fu: click "Play Now" to play</p>
             <button onclick="playNow()" class="btn font-semibold">Play Now</button>
         </section>
         <!--* play game section -->
@@ -73,14 +73,14 @@
                         <button class="btn bg-[#894189] border-none text-white rounded-full">
                             Life
                             <img src="./icons/heart.svg" alt="">
-                            <span>3</span>
+                            <span id="life-bar">3</span>
                         </button>
                         <!-- score bar -->
                         <div>
                             <button class="btn bg-[#360490] text-white border-none rounded-full">
                                 score
                                 <img src="./icons/dollar.svg" alt="">
-                                <span>0</span>
+                                <span id="score-card">0</span>
                             </button>
                         </div>
                     </div>
@@ -88,10 +88,10 @@
             </div>
         </section>
         <!--* score section -->
-        <section class="hidden">
+        <section id="score-board" class="hidden">
             <div class=" text-white min-h-screen flex flex-col justify-center items-center gap-14">
-                <h2 class="text-4xl font-bold">Score : <span>0</span></h2>
-                <button class="btn text-lg font-bold">Play Again</button>
+                <h2 class="text-4xl font-bold">Score : <span id="score">0</span></h2>
+                <button id="play-again" class="btn text-lg font-bold">Play Again</button>
                 <p class="text-xl">Practice will make you better :)</p>
             </div>
         </section>
